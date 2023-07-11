@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const DefaultLayout = () => {
   return (
-    <div className="flex w-screen">
+    <div className="flex">
       <div>
         <Sidebar />
       </div>
