@@ -4,6 +4,7 @@ import { atelierForestLight } from 'react-syntax-highlighter/dist/esm/styles/hlj
 
 import folderHtml from '../assets/folder-html.png';
 import element from '../assets/element.png';
+import tabelBuku from '../assets/table-buku.png';
 
 const Html = () => {
   const htmlSkeleton = (content) => `<!DOCTYPE html>
@@ -61,7 +62,7 @@ const Html = () => {
           HTML Tag
         </div>
         <div className="materi">
-          <div>Berikut merupakan tag HTML yang umum digunakan</div>
+          <p>Berikut merupakan tag HTML yang umum digunakan:</p>
           <table className="table">
             <thead>
               <tr>
@@ -107,21 +108,6 @@ const Html = () => {
                 <td>Heading 6</td>
               </tr>
               <tr>
-                <td>&lt;form&gt;</td>
-                <td>HTML Text Tags</td>
-                <td>Strong</td>
-              </tr>
-              <tr>
-                <td>&lt;input&gt;</td>
-                <td>HTML Text Tags</td>
-                <td>Strong</td>
-              </tr>
-              <tr>
-                <td>&lt;textarea&gt;</td>
-                <td>HTML Text Tags</td>
-                <td>Strong</td>
-              </tr>
-              <tr>
                 <td>&lt;strong&gt;</td>
                 <td>HTML Text Tags</td>
                 <td>Strong</td>
@@ -145,6 +131,36 @@ const Html = () => {
                 <td>&lt;div&gt;</td>
                 <td>HTML Text Tags</td>
                 <td>Division</td>
+              </tr>
+              <tr>
+                <td>&lt;table&gt;</td>
+                <td>HTML Table Tags</td>
+                <td>To Make a table</td>
+              </tr>
+              <tr>
+                <td>&lt;tr&gt;</td>
+                <td>HTML Table Tags</td>
+                <td>Table Row</td>
+              </tr>
+              <tr>
+                <td>&lt;td&gt;</td>
+                <td>HTML Table Tags</td>
+                <td>Table Data</td>
+              </tr>
+              <tr>
+                <td>&lt;form&gt;</td>
+                <td>HTML Form Tags</td>
+                <td>Form</td>
+              </tr>
+              <tr>
+                <td>&lt;input&gt;</td>
+                <td>HTML Form Tags</td>
+                <td>Make an Input field</td>
+              </tr>
+              <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>HTML Form Tags</td>
+                <td>Make a Textarea Input</td>
               </tr>
               <tr>
                 <td>&lt;a&gt;</td>
@@ -293,6 +309,19 @@ const Html = () => {
             nginx atau apache maka tanpa harus menuliskan nama file pada url
             browser
           </p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="title" onClick={() => openMateri(5)}>
+          Latihan
+        </div>
+        <div className="materi">
+          <p>Buatlah daftar seperti ini</p>
+          <img src={tabelBuku} alt="" />
+          <div>
+            ketika judul di klik maka akan membuka website mengenai buku
+            tersebut (link bebas)
+          </div>
         </div>
       </section>
     </div>
