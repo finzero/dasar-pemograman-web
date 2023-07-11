@@ -22,7 +22,9 @@ const Html = () => {
   const openMateri = (idx) => {
     const materi = document.querySelectorAll('.card-content .materi');
     materi[idx].style.display =
-      materi[idx].style.display === 'none' ? 'block' : 'none';
+      !materi[idx].style.display || materi[idx].style.display === 'none'
+        ? 'block'
+        : 'none';
   };
 
   return (
@@ -32,9 +34,11 @@ const Html = () => {
           Struktur Dasar HTML
         </div>
         <div className="materi">
-          HTML merupakan singkatan dari Hypertext Markup Language merupakan
-          bahasa markup standar untuk membuat dan menyusun halaman dan aplikasi
-          web
+          <p>
+            HTML merupakan singkatan dari Hypertext Markup Language merupakan
+            bahasa markup standar untuk membuat dan menyusun halaman dan
+            aplikasi web
+          </p>
           <SyntaxHighlighter
             language="html"
             style={atelierForestLight}
