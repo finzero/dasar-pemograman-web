@@ -4,21 +4,19 @@ import { atomOneDarkReasonable } from 'react-syntax-highlighter/dist/esm/styles/
 
 import folderHtml from '../assets/folder-html.png';
 import element from '../assets/element.png';
-import tabelBuku from '../assets/table-buku.png';
+
+const HighlightSyntax = ({ children }) => (
+  <SyntaxHighlighter
+    language="html"
+    style={atomOneDarkReasonable}
+    showInlineLineNumbers
+    wrapLongLines
+  >
+    {children}
+  </SyntaxHighlighter>
+);
 
 const Html = () => {
-  const htmlSkeleton = (content) => `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  ${content}
-</body>
-</html>`;
-
   const openMateri = (idx) => {
     const materi = document.querySelectorAll('.card-content .materi');
     materi[idx].style.display =
@@ -39,14 +37,20 @@ const Html = () => {
             bahasa markup standar untuk membuat dan menyusun halaman dan
             aplikasi web
           </p>
-          <SyntaxHighlighter
-            language="html"
-            style={atomOneDarkReasonable}
-            showInlineLineNumbers
-            wrapLongLines
-          >
-            {htmlSkeleton('')}
-          </SyntaxHighlighter>
+          <HighlightSyntax>
+            {`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+`}
+          </HighlightSyntax>
           <div className="mb-1">
             <code className="w3-codespan"> &lt;!DOCTYPE html&gt;</code>{' '}
             Menunjukan versi HTML
@@ -204,28 +208,29 @@ const Html = () => {
           Cara Membuat HTML
         </div>
         <div className="materi">
-          <SyntaxHighlighter
-            language="html"
-            style={atomOneDarkReasonable}
-            showInlineLineNumbers
-            wrapLongLines
-          >
-            {htmlSkeleton('ini adalah halaman contact')}
-          </SyntaxHighlighter>
+          <HighlightSyntax>
+            {`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  ini adalah halaman contact
+</body>
+</html>
+`}
+          </HighlightSyntax>
           Kalian bisa copy code di atas, kemudian save dengan nama
           <b> [nama_file].html</b>, misal <b> contact.html</b>
           <h3>Beberapa hal yang perlu diperhatikan</h3>
           <hr />
           <div>
             <b>1. Gunakan Huruf Kecil untuk tag</b>
-            <SyntaxHighlighter
-              language="html"
-              style={atomOneDarkReasonable}
-              showInlineLineNumbers
-              wrapLongLines
-            >
+            <HighlightSyntax>
               {`<p>text <b>bold</b>, text <i>italic</i>, text <u>underscore</u></p>`}
-            </SyntaxHighlighter>
+            </HighlightSyntax>
             hasil:{' '}
             <p>
               text <b>bold</b>, text <i>italic</i>, text <u>underscore</u>
@@ -233,14 +238,9 @@ const Html = () => {
           </div>
           <div>
             <b>2. Pastikan Tag ditutup dengan benar</b>
-            <SyntaxHighlighter
-              language="html"
-              style={atomOneDarkReasonable}
-              showInlineLineNumbers
-              wrapLongLines
-            >
+            <HighlightSyntax>
               {`<p>text <b><i><u>bold</u></i></b></p>`}
-            </SyntaxHighlighter>
+            </HighlightSyntax>
             hasil:{' '}
             <p>
               text{' '}
@@ -271,38 +271,39 @@ const Html = () => {
           <h3>Atribut pada Element</h3>
           <ul>
             <li>
-              <code class="w3-codespan">href</code> pada{' '}
-              <code class="w3-codespan">&lt;a&gt;</code> menentukan tujuan dai
-              url jika di klik
+              <code className="w3-codespan">href</code> pada{' '}
+              <code className="w3-codespan">&lt;a&gt;</code> menentukan tujuan
+              dai url jika di klik
             </li>
             <li>
-              <code class="w3-codespan">src</code> pada{' '}
-              <code class="w3-codespan">&lt;img&gt;</code> menentukan sumber
+              <code className="w3-codespan">src</code> pada{' '}
+              <code className="w3-codespan">&lt;img&gt;</code> menentukan sumber
               dari sebuah gambar/file
             </li>
             <li>
-              <code class="w3-codespan">width</code> dan{' '}
-              <code class="w3-codespan">height</code> pada{' '}
-              <code class="w3-codespan">&lt;img&gt;</code> digunakan untuk
+              <code className="w3-codespan">width</code> dan{' '}
+              <code className="w3-codespan">height</code> pada{' '}
+              <code className="w3-codespan">&lt;img&gt;</code> digunakan untuk
               menentukan height & width pada sebuah gambar
             </li>
             <li>
-              <code class="w3-codespan">alt</code> pada{' '}
-              <code class="w3-codespan">&lt;img&gt;</code> nilai yang ada di
+              <code className="w3-codespan">alt</code> pada{' '}
+              <code className="w3-codespan">&lt;img&gt;</code> nilai yang ada di
               dalam alt akan di munculkan jika sumber image tidak ada
             </li>
             <li>
-              <code class="w3-codespan">style</code> digunakan untuk menambahkan
-              styles pada sebuah element, seperti color, font, size, dan lainnya
+              <code className="w3-codespan">style</code> digunakan untuk
+              menambahkan styles pada sebuah element, seperti color, font, size,
+              dan lainnya
             </li>
             <li>
-              <code class="w3-codespan">lang</code> pada{' '}
-              <code class="w3-codespan">&lt;html&gt;</code> menunjukan bahasa
-              yang digunakan di dalam website
+              <code className="w3-codespan">lang</code> pada{' '}
+              <code className="w3-codespan">&lt;html&gt;</code> menunjukan
+              bahasa yang digunakan di dalam website
             </li>
             <li>
-              <code class="w3-codespan">title</code> memberikan informasi judul
-              pada sebuah element
+              <code className="w3-codespan">title</code> memberikan informasi
+              judul pada sebuah element
             </li>
           </ul>
         </div>
