@@ -1,6 +1,6 @@
 import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierForestLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atomOneDarkReasonable } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 import folderHtml from '../assets/folder-html.png';
 import element from '../assets/element.png';
@@ -41,7 +41,7 @@ const Html = () => {
           </p>
           <SyntaxHighlighter
             language="html"
-            style={atelierForestLight}
+            style={atomOneDarkReasonable}
             showInlineLineNumbers
             wrapLongLines
           >
@@ -206,7 +206,7 @@ const Html = () => {
         <div className="materi">
           <SyntaxHighlighter
             language="html"
-            style={atelierForestLight}
+            style={atomOneDarkReasonable}
             showInlineLineNumbers
             wrapLongLines
           >
@@ -214,13 +214,13 @@ const Html = () => {
           </SyntaxHighlighter>
           Kalian bisa copy code di atas, kemudian save dengan nama
           <b> [nama_file].html</b>, misal <b> contact.html</b>
-          <h3>Best Practice</h3>
+          <h3>Beberapa hal yang perlu diperhatikan</h3>
           <hr />
           <div>
             <b>1. Gunakan Huruf Kecil untuk tag</b>
             <SyntaxHighlighter
               language="html"
-              style={atelierForestLight}
+              style={atomOneDarkReasonable}
               showInlineLineNumbers
               wrapLongLines
             >
@@ -235,7 +235,7 @@ const Html = () => {
             <b>2. Pastikan Tag ditutup dengan benar</b>
             <SyntaxHighlighter
               language="html"
-              style={atelierForestLight}
+              style={atomOneDarkReasonable}
               showInlineLineNumbers
               wrapLongLines
             >
@@ -317,19 +317,6 @@ const Html = () => {
             nginx atau apache maka tanpa harus menuliskan nama file pada url
             browser
           </p>
-        </div>
-      </section>
-      <section className="section">
-        <div className="title" onClick={() => openMateri(5)}>
-          Latihan
-        </div>
-        <div className="materi">
-          <p>Buatlah daftar seperti ini</p>
-          <img src={tabelBuku} alt="" />
-          <div>
-            ketika judul di klik maka akan membuka website mengenai buku
-            tersebut (link bebas)
-          </div>
         </div>
       </section>
     </div>

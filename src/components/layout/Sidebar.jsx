@@ -1,16 +1,17 @@
 import React from 'react';
 import Divider from '../Divider';
 import SidebarItem from './SidebarItem';
-import logo from '../../assets/dasar-aplikasi-web.png';
 
 const Sidebar = () => {
   return (
     <div className="sidebar-container">
-      <div className="text-center">
-        <img src={logo} alt="Logo" />
+      <div className="sidebar-content">
+        <div className="text-white">
+          <b>Dasar Aplikasi Web</b>
+        </div>
+        <Divider />
+        <SidebarItem />
       </div>
-      <Divider />
-      <SidebarItem />
     </div>
   );
 };
