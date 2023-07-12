@@ -262,7 +262,12 @@ const Html = () => {
             <b>Element</b> adalah komponen yang menyusun sebuah html, berikut
             merupakan contoh element: <br />
           </p>
-          <img src={element} alt="Element HTML" width={700} />
+          <img
+            className="m-w-full"
+            src={element}
+            alt="Element HTML"
+            width={700}
+          />
           <h3>Atribut pada Element</h3>
           <ul>
             <li>

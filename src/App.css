@@ -52,6 +52,10 @@
   flex-direction: column;
 }
 
+.justify-content-between {
+  justify-content: space-between;
+}
+
 .card-content {
   padding: 10px;
   overflow-y: auto;
@@ -73,6 +77,10 @@
 
 .h-screen {
   height: 100vh;
+}
+
+.m-w-full {
+  max-width: 100%;
 }
 
 .flex-grow-1 {
@@ -145,6 +153,10 @@ pre {
   text-align: center  ;
 }
 
+.text-right {
+  text-align: right  ;
+}
+
 .w3-codespan {
   color: crimson;
   background-color: #f1f1f1;
@@ -155,4 +167,33 @@ pre {
 
 .text-white {
   color: white;
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+@media screen and (max-width: 375px) {
+  .sidebar-container {
+    position: fixed;
+    width: 15px;
+  }
+  .sidebar-container .sidebar-title {
+    display: none;
+  }
+  .sidebar-container.expand .sidebar-title {
+    display: block;
+  }
+  .sidebar-container.expand {
+    width: 300px;
+  }
+  .sidebar-content {
+    display: none;
+  }
+  .sidebar-container.expand .sidebar-content {
+    display: block;
+  }
+  .content-container {
+    margin-left: 16px
+  }
 }
