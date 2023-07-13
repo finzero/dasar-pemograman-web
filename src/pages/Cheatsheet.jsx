@@ -32,6 +32,17 @@ const Cheatsheet = () => {
           </a>
         </div>
       </section>
+      <section className="section">
+        <div className="title">Styling</div>
+        <div className="flex py-1 gap-1">
+          <a
+            href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+            target="blank"
+          >
+            <div className="card cheatsheet">Flexbox Guide</div>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
