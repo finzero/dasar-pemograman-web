@@ -1,13 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-import DefaultLayout from './components/layout/DefaultLayout'
+import { useState } from 'react';
+import './App.css';
+import DefaultLayout from './components/layout/DefaultLayout';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  return (
-   <DefaultLayout />
-  )
+  return <DefaultLayout />;
 }
 
-export default App
+export default App;

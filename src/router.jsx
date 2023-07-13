@@ -2,6 +2,7 @@ import { Navigate, createBrowserRouter } from 'react-router-dom';
 import DefaultLayout from './components/layout/DefaultLayout';
 import Html from './pages/Html';
 import Css from './pages/Css';
+import Cheatsheet from './pages/Cheatsheet';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: 'css',
         element: <Css />,
+      },
+      {
+        path: 'cheatsheet',
+        element: <Cheatsheet />,
       },
       {
         path: '/',

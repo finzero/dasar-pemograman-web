@@ -6,7 +6,7 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
   background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
   position: fixed;
-}  
+}
 
 .flex-sm-col {
   flex-direction: column;
@@ -43,9 +43,11 @@
 .sidebar-container.expand {
   width: 250px;
 }
+
 .sidebar-container.expand .sidebar-title {
   display: block;
 }
+
 .sidebar-container.expand .sidebar-content {
   display: block;
 }
@@ -97,7 +99,7 @@
 
 .w-screen {
   width: 100vw;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .h-screen {
@@ -110,6 +112,14 @@
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.py-1 {
+  padding: 1em 0;
+}
+
+.gap-1 {
+  gap: 1em;
 }
 
 pre {
@@ -161,7 +171,7 @@ pre {
   background: aliceblue;
 }
 
-.section > .title {
+.section>.title {
   margin-top: -25px;
 }
 
@@ -175,11 +185,11 @@ pre {
 }
 
 .text-center {
-  text-align: center  ;
+  text-align: center;
 }
 
 .text-right {
-  text-align: right  ;
+  text-align: right;
 }
 
 .w3-codespan {
@@ -203,16 +213,39 @@ pre {
     position: relative;
     width: 250px;
   }
+
   .sidebar-container .sidebar-title {
     display: block;
   }
+
   .sidebar-content {
     display: block;
   }
+
   .content-container {
     margin-left: 0px
-  } 
+  }
+
   .flex-sm-col {
     flex-direction: row;
   }
+}
+
+.card {
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.25);
+  transition-duration: .5s;
+}
+
+.card.cheatsheet {
+  color: #037ddb;
+}
+
+.card.cheatsheet:hover {
+  background: #037ddb;
+  color: white;
 }

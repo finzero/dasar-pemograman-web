@@ -512,7 +512,7 @@ akan ada margin/jarak sebesar 20px (pixel), kita bisa menggunakan style text-ind
                 digunakan untuk membuat sebuah komponen dari aplikasi web.
                 berikut meupakan contoh post pada instagram:
               </p>
-              <img src={igDobah} alt="" srcset="" />
+              <img src={igDobah} alt="" srcSet="" />
             </li>
           </ol>
         </div>

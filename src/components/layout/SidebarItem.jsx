@@ -8,8 +8,8 @@ const data = [
     active: false,
   },
   {
-    label: 'CSS',
-    link: 'css',
+    label: 'Cheatsheet',
+    link: 'cheatsheet',
     active: false,
   },
 ];
