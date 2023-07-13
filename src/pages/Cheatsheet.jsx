@@ -41,6 +41,12 @@ const Cheatsheet = () => {
           >
             <div className="card cheatsheet">Flexbox Guide</div>
           </a>
+          <a
+            href="https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
+            target="blank"
+          >
+            <div className="card cheatsheet">Flexbox Interactive Guide</div>
+          </a>
         </div>
       </section>
     </div>
