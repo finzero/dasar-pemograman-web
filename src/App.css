@@ -6,6 +6,10 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
   background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
   position: fixed;
+}  
+
+.flex-sm-col {
+  flex-direction: column;
 }
 
 .sidebar-container.expand .toggler-menu {
@@ -207,5 +211,8 @@ pre {
   }
   .content-container {
     margin-left: 0px
+  } 
+  .flex-sm-col {
+    flex-direction: row;
   }
 }

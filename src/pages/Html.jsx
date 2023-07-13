@@ -4,6 +4,7 @@ import { atomOneDarkReasonable } from 'react-syntax-highlighter/dist/esm/styles/
 
 import folderHtml from '../assets/folder-html.png';
 import element from '../assets/element.png';
+import igDobah from '../assets/layout-post-ig.png';
 
 const HighlightSyntax = ({ children }) => (
   <SyntaxHighlighter
@@ -323,6 +324,197 @@ const Html = () => {
             nginx atau apache maka tanpa harus menuliskan nama file pada url
             browser
           </p>
+        </div>
+      </section>
+      <section id="styling-html" className="section">
+        <div className="title" onClick={() => openMateri(5)}>
+          Styling pada HTML
+        </div>
+        <div className="materi">
+          <p>
+            Kita bisa memberikan style pada element html, caranya adalah dengan
+            menggunakan atribut <code>style</code>.
+          </p>
+          <h3>Contoh 1:</h3>
+          <div>
+            <HighlightSyntax>
+              {`<p style="background: black; color: white">
+saya ingin membuat background ini berwarna hitam, dan text-nya berwarna putih
+</p>`}
+            </HighlightSyntax>
+          </div>
+          <p
+            style={{
+              background: 'black',
+              color: 'white',
+              padding: 8,
+            }}
+          >
+            saya ingin membuat background ini berwarna hitam, dan text nya
+            berwarna putih
+          </p>
+          {/* contoh 2 */}
+          <h3>Contoh 2:</h3>
+          <div>
+            <HighlightSyntax>
+              {`<p style="text-indent: 20px">
+ini adalah contoh sebuah paragraf artikel dimana pada baris petama
+akan ada margin/jarak sebesar 20px (pixel), kita bisa menggunakan style text-indent [number]px untuk memberi jarak pada baris paragraf pertama
+</p>`}
+            </HighlightSyntax>
+          </div>
+          <p
+            style={{
+              textIndent: '20px',
+              background: 'white',
+              border: '1px solid',
+              padding: 10,
+            }}
+          >
+            ini adalah contoh sebuah paragraf artikel dimana pada baris petama
+            akan ada margin/jarak sebesar 20px (pixel), kita bisa menggunakan
+            style text-indent [number]px untuk memberi jarak pada baris paragraf
+            pertama
+          </p>
+          <h3>Contoh 3:</h3>
+          <div className="flex flex-sm-col">
+            <HighlightSyntax>
+              {`<table>
+<thead style="background: black; color: white;">
+  <tr>
+    <th>Nama</th>
+    <th>Jumlah</th>
+    <th>Harga</th>
+    <th>Total</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Apel</td>
+    <td align='center'>2</td>
+    <td align='right'>3000</td>
+    <td align='right'>6000</td>
+  </tr>
+  <tr>
+    <td>Jeruk</td>
+    <td align='center'>4</td>
+    <td align='right'>2000</td>
+    <td align='right'>8000</td>
+  </tr>
+</tbody>
+<tfoot style="background: grey; color: white; font-weight: bold;">
+  <tr>
+    <td colspan="3">Total</td>
+    <td>14000</td>
+  </tr>
+</tfoot>
+</table>`}
+            </HighlightSyntax>
+            <div
+              style={{
+                marginTop: '1em',
+                padding: '5px',
+                border: '1px solid',
+                marginLeft: '5px',
+                background: 'lemonchiffon',
+              }}
+            >
+              <table>
+                <thead style={{ background: 'black', color: 'white' }}>
+                  <tr>
+                    <th>Nama</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody style={{ background: 'white' }}>
+                  <tr>
+                    <td>Apel</td>
+                    <td align="center">2</td>
+                    <td align="right">3000</td>
+                    <td align="right">6000</td>
+                  </tr>
+                  <tr>
+                    <td>Jeruk</td>
+                    <td align="center">4</td>
+                    <td align="right">2000</td>
+                    <td align="right">8000</td>
+                  </tr>
+                </tbody>
+                <tfoot
+                  style={{
+                    background: 'grey',
+                    color: 'white',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  <tr>
+                    <td colSpan="3">Total</td>
+                    <td>14000</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="title" onClick={() => openMateri(6)}>
+          Mengenal &lt;div&gt;
+        </div>
+        <div className="materi">
+          <p>
+            <b>div</b> merupakan singkatan dari <i>division</i> atau
+            pengelompokan, di dalam element div kita bisa membungkus beberapa
+            element lain. Tujuan dari pengelompokan ini adalah agar
+            element-element tersebut dapat di atur secara UI (User Interface)
+            sehingga dapat menghasilkan tampilan yang nyaman untuk di lihat
+          </p>
+          <h3>Beberapa kegunaan tag &lt;div&gt;:</h3>
+          <ol>
+            <li id="layout">
+              <b>Membuat Layout Website</b>
+              <p>
+                Karena fungsinya yang bisa mengelompokan element, div biasa
+                digunakan untuk membuat layout dari sebuah halaman web
+              </p>
+            </li>
+            <li id="shape">
+              <b>Membuat sebuah Bentuk</b>
+              <p>
+                Secara default element html berbentuk kotak, div dengan bantuan
+                style bisa dibuat menjadi beberapa bentuk, contohnya frame bulat
+                avatar
+              </p>
+              <div className="flex">
+                <div
+                  style={{
+                    borderRadius: '50%',
+                    border: '1px solid',
+                    width: 100,
+                    height: 100,
+                    overflow: 'hidden',
+                  }}
+                >
+                  <img
+                    src="https://images.mubicdn.net/images/cast_member/2184/cache-2992-1547409411/image-w856.jpg"
+                    alt=""
+                    style={{ width: '100%' }}
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <b>Membuat sebuah komponen</b>
+              <p>
+                karena sifatnya yang bisa mengelompokan element, div sering
+                digunakan untuk membuat sebuah komponen dari aplikasi web.
+                berikut meupakan contoh post pada instagram:
+              </p>
+              <img src={igDobah} alt="" srcset="" />
+            </li>
+          </ol>
         </div>
       </section>
     </div>
