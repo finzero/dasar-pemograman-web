@@ -45,22 +45,27 @@ const CSSAnimation = () => {
                 </code>
               </li>
               <li>
-                <code className="text-red">animation-duration:</code>
+                <code className="text-red">
+                  animation-duration: durasi animasi dari awal sampai akhir
+                </code>
               </li>
               <li>
-                <code className="text-red">animation-direction:</code>
+                <code className="text-red">animation-direction:</code> arah
+                animasi <code className="text-red">normal | alternate</code>
               </li>
               <li>
-                <code className="text-red">animation-iteration-count:</code>
+                <code className="text-red">animation-iteration-count:</code>{' '}
+                Berapa kali animasi akan di jalankan
               </li>
               <li>
-                <code className="text-red">animation-timing-function:</code>
+                <code className="text-red">animation-timing-function:</code>{' '}
+                pergerakan animasi dari awal hingga akhir
               </li>
               <li>
-                <code className="text-red">animation-fill-mode:</code>
-              </li>
-              <li>
-                <code className="text-red">keyframes:</code>
+                <code className="text-red">
+                  keyframes: properti yang digunakan untuk membuat sebuah
+                  animasi pada CSS
+                </code>
               </li>
             </ul>
           </div>
