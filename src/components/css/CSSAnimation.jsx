@@ -115,8 +115,8 @@ const CSSAnimation = () => {
             </div>
             <div className="flex gap-1">
               <HighlightSyntax>
-                {`<div className="moving-obj-container">
-  <div className="moving-obj"></div>
+                {`<div class="moving-obj-container">
+  <div class="moving-obj"></div>
 </div>`}
               </HighlightSyntax>
               <HighlightSyntax>
