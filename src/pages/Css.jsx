@@ -11,7 +11,7 @@ const Css = () => {
       <CSSPengenalan />
       <CSSLoad />
       <CSSSelector />
-      {/* <CSSAnimation /> */}
+      <CSSAnimation />
     </div>
   );
 };
