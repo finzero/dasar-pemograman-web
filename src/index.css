@@ -20,3 +20,20 @@ body {
   /* color: white; */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+pre {
+  margin: .5em 0;
+}
+
+.bg-white {
+  background: white;
+}
+
+.b-1 {
+  border: 1px solid #ddd;
+}
+
+.link:hover {
+  font-weight: bold;
+  background: yellow;
+}

@@ -47,6 +47,37 @@ const Cheatsheet = () => {
           >
             <div className="card cheatsheet">Flexbox Interactive Guide</div>
           </a>
+          <a
+            href="https://codebeautify.org/css-selector-cheat-sheet"
+            target="blank"
+          >
+            <div className="card cheatsheet">CSS Selector</div>
+          </a>
+          <a
+            href="https://www.w3schools.com/cssref/css_selectors.php"
+            target="blank"
+          >
+            <div className="card cheatsheet">W3S CSS Selector</div>
+          </a>
+        </div>
+      </section>
+      <section className="section">
+        <div className="title">CSS Animation</div>
+        <div className="flex py-1 gap-1">
+          <a
+            href="https://www.filepicker.io/api/file/pljRRmwQfSxKwJJAqoCV"
+            target="blank"
+          >
+            <div className="card cheatsheet">CSS Animation Cheatsheet</div>
+          </a>
+          <a
+            href="https://acchou.github.io/html-css-cheat-sheet/animation.html"
+            target="blank"
+          >
+            <div className="card cheatsheet">
+              Interactive CSS Animation & Transition
+            </div>
+          </a>
         </div>
       </section>
     </div>

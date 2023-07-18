@@ -1,0 +1,44 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product {
+  box-shadow: -2px 5px 17px -4px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: -2px 5px 17px -4px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: -2px 5px 17px -4px rgba(0, 0, 0, 0.57);
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.discount-percent {
+  color: red;
+  padding: 5px;
+  font-size: 12px;
+  background: #ffc8c8;
+  border-radius: 5px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 12px;
+}

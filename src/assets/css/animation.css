@@ -1,0 +1,33 @@
+.spinning-image {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moving-obj-container {
+  width: 600px;
+  height: 100px;
+  background: grey;
+  position: relative;
+  padding: 5px;
+}
+
+.moving-obj-container:hover>.moving-obj {
+  transform: translateX(500px);
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.moving-obj {
+  transition-duration: 2s;
+  transition-property: all;
+  transition-timing-function: ease;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: yellow;
+}

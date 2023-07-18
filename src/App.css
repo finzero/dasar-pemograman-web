@@ -204,6 +204,10 @@ pre {
   color: white;
 }
 
+.text-red {
+  color: red;
+}
+
 .pt-1 {
   padding-top: 1em;
 }
@@ -248,4 +252,15 @@ pre {
 .card.cheatsheet:hover {
   background: #037ddb;
   color: white;
+}
+
+.syntax-container {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.shadow-md {
+  box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.75);
 }

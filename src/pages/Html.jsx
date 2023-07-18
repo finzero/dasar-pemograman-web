@@ -1,21 +1,9 @@
 import React from 'react';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atomOneDarkReasonable } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 import folderHtml from '../assets/folder-html.png';
 import element from '../assets/element.png';
 import igDobah from '../assets/layout-post-ig.png';
-
-const HighlightSyntax = ({ children }) => (
-  <SyntaxHighlighter
-    language="html"
-    style={atomOneDarkReasonable}
-    showInlineLineNumbers
-    wrapLongLines
-  >
-    {children}
-  </SyntaxHighlighter>
-);
+import HighlightSyntax from '../components/HighlightSyntax';
 
 const Html = () => {
   const openMateri = (idx) => {
@@ -512,7 +500,7 @@ akan ada margin/jarak sebesar 20px (pixel), kita bisa menggunakan style text-ind
                 digunakan untuk membuat sebuah komponen dari aplikasi web.
                 berikut meupakan contoh post pada instagram:
               </p>
-              <img src={igDobah} alt="" srcSet="" />
+              <img src={igDobah} alt="" />
             </li>
           </ol>
         </div>

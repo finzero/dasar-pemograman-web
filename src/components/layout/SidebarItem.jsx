@@ -8,6 +8,11 @@ const data = [
     active: false,
   },
   {
+    label: 'CSS',
+    link: 'css',
+    active: false,
+  },
+  {
     label: 'Cheatsheet',
     link: 'cheatsheet',
     active: false,
