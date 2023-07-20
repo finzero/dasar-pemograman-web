@@ -1,8 +1,19 @@
 import { Navigate, createBrowserRouter } from 'react-router-dom';
 import DefaultLayout from './components/layout/DefaultLayout';
-import Html from './pages/Html';
-import Css from './pages/Css';
-import Cheatsheet from './pages/Cheatsheet';
+import { lazy, Suspense } from 'react';
+import Loading from './pages/Loading';
+
+const delaySuspense = (compPath) => {
+  return lazy(() => {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(import(compPath)), 500);
+    });
+  });
+};
+
+const Html = delaySuspense('./pages/Html');
+const Css = delaySuspense('./pages/Css');
+const Cheatsheet = delaySuspense('./pages/Cheatsheet');
 
 const router = createBrowserRouter([
   {
@@ -12,15 +23,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'html',
-        element: <Html />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Html />
+          </Suspense>
+        ),
       },
       {
         path: 'css',
-        element: <Css />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Css />
+          </Suspense>
+        ),
       },
       {
         path: 'cheatsheet',
-        element: <Cheatsheet />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Cheatsheet />
+          </Suspense>
+        ),
       },
       {
         path: '/',
