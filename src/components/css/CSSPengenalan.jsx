@@ -3,6 +3,7 @@ import doba from '../../assets/doba.jpg';
 import donutLogo from '../../assets/donut-logo.jpg';
 import igText from '../../assets/ig-text.png';
 import Section from '../Section';
+import cssAsSkin from '../../assets/css-as-skin.png';
 
 export const CSSPengenalan = () => (
   <Section title="Pengenalan CSS">
@@ -11,11 +12,7 @@ export const CSSPengenalan = () => (
       mengatur tampilan web. Dengan CSS, kita dapat mengatur layout (tata
       letak), warna, font, garis, background, animasi, dan lain-lain.
     </p>
-    <img
-      style={{ maxWidth: 400 }}
-      src="https://www.dicoding.com/blog/wp-content/uploads/2022/11/css-as-skin.png"
-      alt=""
-    />
+    <img style={{ maxWidth: 400 }} src={cssAsSkin} alt="" />
     <p>
       <b>HTML</b> bisa dibilang sebagai kerangka dari sebuah aplikasi web,
       dimana <b>CSS</b> merupakan kulit yang melapisi kerangka tersebut.

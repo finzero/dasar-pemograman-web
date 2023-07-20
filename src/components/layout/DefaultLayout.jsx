@@ -1,13 +1,15 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import { Outlet } from 'react-router-dom';
+import TopNavBar from './TopNavBar';
 
 const DefaultLayout = () => {
   return (
     <div className="flex">
-      <div>
+      <TopNavBar />
+      {/* <div>
         <Sidebar />
-      </div>
+      </div> */}
       <div className="content-container">
         <Outlet />
       </div>
