@@ -1,10 +1,9 @@
 import React from 'react';
 import Section from '../Section';
-import HighlightSyntax from '../HighlightSyntax';
 
 const CSSUnit = () => {
   return (
-    <Section title="Unit pada CSS">
+    <Section id="css-unit" title="Unit pada CSS">
       <div className="card-content bg-white b-1" style={{ marginTop: 10 }}>
         <h4>Satuan Absolute</h4>
         <table className="table">

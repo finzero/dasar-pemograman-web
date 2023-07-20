@@ -9,13 +9,31 @@ import CSSUnit from '../components/css/CSSUnit';
 
 const Css = () => {
   return (
-    <div className="card-content">
-      <CSSPengenalan />
-      <CSSLoad />
-      <CSSSelector />
-      <CSSAnimation />
-      <CSSMediaQuery />
-      <CSSUnit />
+    <div className="flex">
+      <div className="sidebar-anchor">
+        <div
+          style={{
+            position: 'fixed',
+            display: 'flex',
+            flexDirection: 'column',
+          }}
+        >
+          <a href="#css-pengenalan">Pengenalan CSS</a>
+          <a href="#css-load">Cara Load CSS</a>
+          <a href="#css-selector">Selector CSS</a>
+          <a href="#css-animasi">Animasi dengan CSS</a>
+          <a href="#css-media-query">CSS Media Query</a>
+          <a href="#css-unit">Unit Pada CSS</a>
+        </div>
+      </div>
+      <div className="card-content">
+        <CSSPengenalan />
+        <CSSLoad />
+        <CSSSelector />
+        <CSSAnimation />
+        <CSSMediaQuery />
+        <CSSUnit />
+      </div>
     </div>
   );
 };

@@ -85,7 +85,8 @@
 .card-content {
   padding: 10px;
   overflow-y: auto;
-  /* background: #23272f; */
+  background: #404040;
+  flex-grow: 1;
 }
 
 .card-content .materi {
@@ -173,10 +174,6 @@ pre {
   background: aliceblue;
 }
 
-.section>.title {
-  /* margin-top: -25px; */
-}
-
 .mb-1 {
   margin-bottom: 0.5em;
 }
@@ -261,4 +258,14 @@ pre {
   box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar-anchor {
+  border: 1px solid;
+  min-width: 250px;
+}
+
+.sidebar-anchor a {
+  margin: 5px;
+  color: #0081ca;
 }

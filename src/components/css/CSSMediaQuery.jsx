@@ -4,7 +4,7 @@ import HighlightSyntax from '../HighlightSyntax';
 
 const CSSMediaQuery = () => {
   return (
-    <Section title="CSS Media Query">
+    <Section id="css-media-query" title="CSS Media Query">
       <p>
         <b>Media Query</b> merupakan modul CSS3 yang berguna membuat layout kita
         responsive dengan menyesuaikan tampilan berdasarkan ukuran layar

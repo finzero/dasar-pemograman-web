@@ -6,7 +6,7 @@ import Section from '../Section';
 import cssAsSkin from '../../assets/css-as-skin.png';
 
 export const CSSPengenalan = () => (
-  <Section title="Pengenalan CSS">
+  <Section id="css-pengenalan" title="Pengenalan CSS">
     <p>
       CSS (Cascade Style Sheet) adalah sebuah bahasa yang digunakan untuk
       mengatur tampilan web. Dengan CSS, kita dapat mengatur layout (tata

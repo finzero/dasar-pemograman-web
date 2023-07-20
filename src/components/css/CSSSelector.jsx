@@ -4,7 +4,7 @@ import Section from '../Section';
 
 const CSSSelector = () => {
   return (
-    <Section title="Selector CSS">
+    <Section id="css-selector" title="Selector CSS">
       <div className="card-content bg-white b-1" style={{ marginTop: 10 }}>
         <b>Tag Selector</b>
         <HighlightSyntax>{`span { color: blue }`}</HighlightSyntax>

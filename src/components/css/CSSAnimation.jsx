@@ -6,7 +6,7 @@ import Section from '../Section';
 
 const CSSAnimation = () => {
   return (
-    <Section title="Animasi dengan CSS">
+    <Section id="css-animation" title="Animasi dengan CSS">
       <div>
         <p>
           Kita bisa membuat sebuah object bergerak, berubah bentuk dan atau

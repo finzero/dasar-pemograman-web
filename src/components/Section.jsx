@@ -2,7 +2,7 @@ import React from 'react';
 
 const Section = (props) => {
   return (
-    <section className="section">
+    <section id={props.id} className="section">
       <div role="button" className="title">
         {props.title}
       </div>
