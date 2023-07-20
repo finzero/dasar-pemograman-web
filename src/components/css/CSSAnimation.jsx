@@ -2,20 +2,18 @@ import React from 'react';
 import banGoodyear from '../../assets/ban-goodyear.png';
 import '../../assets/css/animation.css';
 import HighlightSyntax from '../HighlightSyntax';
+import Section from '../Section';
 
 const CSSAnimation = () => {
   return (
-    <section className="section">
-      <div role="button" className="title">
-        Animasi dengan css
+    <Section title="Animasi dengan CSS">
+      <div>
+        <p>
+          Kita bisa membuat sebuah object bergerak, berubah bentuk dan atau
+          berubah warna dengan menggunakan CSS
+        </p>
       </div>
       <div className="flex flex-col gap-1">
-        <div>
-          <p>
-            Kita bisa membuat sebuah object bergerak, berubah bentuk dan atau
-            berubah warna dengan menggunakan CSS
-          </p>
-        </div>
         <div className="card-content bg-white b-1">
           <div className="mb-1">
             <b>Properti Animasi Pada CSS</b>
@@ -153,7 +151,7 @@ const CSSAnimation = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

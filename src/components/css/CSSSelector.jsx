@@ -1,12 +1,10 @@
 import React from 'react';
 import HighlightSyntax from '../HighlightSyntax';
+import Section from '../Section';
 
 const CSSSelector = () => {
   return (
-    <section className="section">
-      <div role="button" className="title">
-        Selector CSS
-      </div>
+    <Section title="Selector CSS">
       <div className="card-content bg-white b-1" style={{ marginTop: 10 }}>
         <b>Tag Selector</b>
         <HighlightSyntax>{`span { color: blue }`}</HighlightSyntax>
@@ -75,7 +73,7 @@ const CSSSelector = () => {
           </a>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

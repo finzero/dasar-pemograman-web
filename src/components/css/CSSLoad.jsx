@@ -1,13 +1,11 @@
 import React from 'react';
 import typeOfCSS from '../../assets/types-of-css.png';
 import HighlightSyntax from '../HighlightSyntax';
+import Section from '../Section';
 
 const CSSLoad = () => {
   return (
-    <section className="section">
-      <div role="button" className="title">
-        Cara Load CSS
-      </div>
+    <Section title="Cara Load CSS">
       <div style={{ display: 'flex' }}>
         <div>
           <img width={'400px'} src={typeOfCSS} alt="" />
@@ -50,7 +48,7 @@ const CSSLoad = () => {
           </ol>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

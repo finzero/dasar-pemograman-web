@@ -152,6 +152,10 @@ pre {
   background: #efefef;
 }
 
+.table tbody tr:hover {
+  background: #c6e6ff!important;
+}
+
 .title {
   padding: 5px;
   background: linear-gradient(195deg, rgb(53 163 231), rgb(0 41 139));
@@ -172,13 +176,8 @@ pre {
 }
 
 .section>.title {
-  margin-top: -25px;
+  /* margin-top: -25px; */
 }
-
-/* code {
-  background: #efefef;
-  padding: 2px;
-} */
 
 .mb-1 {
   margin-bottom: 0.5em;
