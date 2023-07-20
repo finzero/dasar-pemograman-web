@@ -3,17 +3,9 @@ import DefaultLayout from './components/layout/DefaultLayout';
 import { lazy, Suspense } from 'react';
 import Loading from './pages/Loading';
 
-const delaySuspense = (compPath) => {
-  return lazy(() => {
-    return new Promise((resolve) => {
-      setTimeout(() => resolve(import(compPath)), 500);
-    });
-  });
-};
-
-const Html = delaySuspense('./pages/Html');
-const Css = delaySuspense('./pages/Css');
-const Cheatsheet = delaySuspense('./pages/Cheatsheet');
+const Html = lazy(() => import('./pages/Html'));
+const Css = lazy(() => import('./pages/Css'));
+const Cheatsheet = lazy(() => import('./pages/Cheatsheet'));
 
 const router = createBrowserRouter([
   {
