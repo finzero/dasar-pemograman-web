@@ -63,7 +63,6 @@
   min-height: calc(100vh - 50px);
   font-size: 16px;
   width: 100%;
-  margin-left: 50px;
 }
 
 .flex {
@@ -82,7 +81,15 @@
   padding: 10px;
   overflow-y: auto;
   background: #404040;
-  flex-grow: 1;
+}
+
+.card-main {
+  padding: 10px;
+  overflow-y: auto;
+  background: #404040;
+  width: calc(100vw - 50px);
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .card-content .materi {
@@ -202,12 +209,20 @@ pre {
   padding-top: 1em;
 }
 
-@media screen and (max-width: 425px) {
+img {
+  max-width: 100%!important;
+}
+
+.no-sidebar {
+  margin-left: 0px!important;
+  width: unset;
+}
+
+@media screen and (max-width: 768px) {
   .flex-sm-col {
     flex-direction: column;
   }
 }
-
 .card {
   padding: 10px;
   background: white;
@@ -296,8 +311,3 @@ pre {
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 425px) {
-  img {
-    max-width: 100%;
-  }
-}

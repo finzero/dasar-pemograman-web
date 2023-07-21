@@ -20,7 +20,7 @@ export const CSSPengenalan = () => (
       web, <b>javascript</b> membuat aplikasi web menjadi dinamis.
     </p>
     <h3>Contoh CSS</h3>
-    <div style={{ display: 'flex' }}>
+    <div className="flex flex-sm-col">
       <HighlightSyntax>
         {`<!DOCTYPE html>
 <html lang="en">

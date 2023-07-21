@@ -20,7 +20,7 @@ const Css = () => {
   return (
     <div className="flex">
       <AnchorNav anchors={anchors} />
-      <div className="card-content">
+      <div className="card-main">
         <CSSPengenalan />
         <CSSLoad />
         <CSSSelector />

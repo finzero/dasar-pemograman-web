@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cheatsheet = () => {
   return (
-    <div className="card-content">
+    <div className="card-main no-sidebar">
       <section className="section">
         <div className="title">HTML</div>
         <div className="flex py-1 gap-1">

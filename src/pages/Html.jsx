@@ -19,7 +19,7 @@ const Html = () => {
   return (
     <div className="flex">
       <AnchorNav anchors={anchors} />
-      <div className="card-content">
+      <div className="card-main">
         <Section id="struktur-html" title="Struktur Dasar HTML">
           <div>
             <p>

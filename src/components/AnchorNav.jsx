@@ -16,6 +16,12 @@ const AnchorNav = (props) => {
     }
   }
 
+  function handleAnchorClick(target) {
+    toggleSidebar();
+    const el = document.getElementById(target);
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div ref={sidebarAnchor} className="sidebar-anchor">
       <div
@@ -28,9 +34,8 @@ const AnchorNav = (props) => {
       <div ref={anchorItems} className="anchor-items">
         {props.anchors.map((anchor) => (
           <a
-            onClick={toggleSidebar}
+            onClick={() => handleAnchorClick(anchor.target)}
             key={anchor.target}
-            href={'#' + anchor.target}
             dangerouslySetInnerHTML={{ __html: `${anchor.title}` }}
           ></a>
         ))}
