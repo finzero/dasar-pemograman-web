@@ -40,7 +40,6 @@ const TopNavBar = () => {
 
   return (
     <div className="top-navbar">
-      <span className="top-navbar-title">Dasar Aplikasi Web</span>
       {menu.map((item, idx) => (
         <Link
           to={item.link}

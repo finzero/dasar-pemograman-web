@@ -1,31 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import folderHtml from '../assets/folder-html.png';
 import element from '../assets/element.png';
 import igDobah from '../assets/layout-post-ig.png';
 import HighlightSyntax from '../components/HighlightSyntax';
 import Section from '../components/Section';
+import AnchorNav from '../components/AnchorNav';
+import useAnchors from '../hooks/useAnchors';
 
 const Html = () => {
+  const [anchors, setSections] = useAnchors();
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section');
+    setSections(sections);
+  }, []);
+
   return (
     <div className="flex">
-      <div className="sidebar-anchor">
-        <div
-          style={{
-            position: 'fixed',
-            display: 'flex',
-            flexDirection: 'column',
-          }}
-        >
-          <a href="#struktur-html">Struktur Dasar HTML</a>
-          <a href="#tag-html">Tag Pada HTML</a>
-          <a href="#cara-buat-html">Cara Membuat HTML</a>
-          <a href="#element">Element</a>
-          <a href="#index-html">Index pada HTML</a>
-          <a href="#styling-html">Styling pada HTML</a>
-          <a href="#div">Div</a>
-        </div>
-      </div>
+      <AnchorNav anchors={anchors} />
       <div className="card-content">
         <Section id="struktur-html" title="Struktur Dasar HTML">
           <div>
