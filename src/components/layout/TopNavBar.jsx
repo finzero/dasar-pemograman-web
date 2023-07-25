@@ -14,6 +14,11 @@ const data = [
     active: false,
   },
   {
+    label: 'Javascript',
+    link: 'javascript',
+    active: false,
+  },
+  {
     label: 'Cheatsheet',
     link: 'cheatsheet',
     active: false,

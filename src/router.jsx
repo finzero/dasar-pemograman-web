@@ -2,6 +2,7 @@ import { Navigate, createBrowserRouter } from 'react-router-dom';
 import DefaultLayout from './components/layout/DefaultLayout';
 import { lazy, Suspense } from 'react';
 import Loading from './pages/Loading';
+import Javascript from './pages/Javascript';
 
 const Html = lazy(() => import('./pages/Html'));
 const Css = lazy(() => import('./pages/Css'));
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<Loading />}>
             <Css />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'javascript',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Javascript />
           </Suspense>
         ),
       },
