@@ -72,13 +72,13 @@ document.querySelectorAll('span');
   <div id="content">ini adalah div content</div>
   <script>
     // mengubah isi dari element content
-    document.getElementById('content).innerHTML = 'ubah content dengan javascript';
+    document.getElementById('content').innerHTML = 'ubah content dengan javascript';
     
     // mengubah background color jadi abu-abu
-    document.getElementById('content).style.backgroundColor = 'grey';
+    document.getElementById('content').style.backgroundColor = 'grey';
     
     // mengubah warna text menjadi putih
-    document.getElementById('content).style.color = 'white';
+    document.getElementById('content').style.color = 'white';
   </script>
 </body>
 ...`}
