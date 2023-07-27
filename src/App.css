@@ -100,6 +100,23 @@
   width: 100%;
 }
 
+.w-49 {
+  width: 49%;
+}
+
+
+.w-50 {
+  width: 50%;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
 .w-screen {
   width: 100vw;
   max-width: 100%;
@@ -115,6 +132,10 @@
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .py-1 {

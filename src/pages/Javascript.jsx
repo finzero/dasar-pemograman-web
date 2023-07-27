@@ -5,6 +5,8 @@ import JSPengenalan from '../components/javascript/JSPengenalan';
 import JSDOM from '../components/javascript/JSDOM';
 import JSCaraLoad from '../components/javascript/JSCaraLoad';
 import JSVariable from '../components/javascript/JSVariable';
+import JSConsole from '../components/javascript/JSConsole';
+import JSOperator from '../components/javascript/JSOperator';
 
 const Javascript = () => {
   const [anchors, setSections] = useAnchors();
@@ -21,7 +23,9 @@ const Javascript = () => {
         <JSPengenalan />
         <JSDOM />
         <JSCaraLoad />
-        {/* <JSVariable /> */}
+        <JSVariable />
+        {/* <JSConsole /> */}
+        <JSOperator />
       </div>
     </div>
   );
