@@ -7,13 +7,20 @@ import JSCaraLoad from '../components/javascript/JSCaraLoad';
 import JSVariable from '../components/javascript/JSVariable';
 import JSConsole from '../components/javascript/JSConsole';
 import JSOperator from '../components/javascript/JSOperator';
+import JSArray from '../components/javascript/JSArray';
+import JSFunction from '../components/javascript/JSFunction';
+import JSEvent from '../components/javascript/JSEvent';
 
 const Javascript = () => {
   const [anchors, setSections] = useAnchors();
 
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
+    let sections = document.querySelectorAll('section');
     setSections(sections);
+
+    return () => {
+      sections = null;
+    };
   }, []);
 
   return (
@@ -26,6 +33,9 @@ const Javascript = () => {
         <JSVariable />
         {/* <JSConsole /> */}
         <JSOperator />
+        <JSArray />
+        <JSFunction />
+        <JSEvent />
       </div>
     </div>
   );

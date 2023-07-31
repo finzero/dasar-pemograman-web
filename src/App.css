@@ -285,9 +285,17 @@ img {
 }
 
 .syntax-head img {
-  top: 5px;
-  left: 5px;
   position: absolute;
+  top: 5px;
+  cursor: pointer;
+}
+
+.syntax-head img.left {
+  left: 5px;
+}
+
+.syntax-head img.right {
+  right: 5px;
 }
 
 .syntax-title {
