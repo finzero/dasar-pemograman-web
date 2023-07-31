@@ -109,12 +109,12 @@ const JSEvent = () => {
   <button onclick="doSomething()">Klik Saya</button>
 
   <!-- event pada input -->
-  <input type="text" onchange="doSomething()" />
-  <input type="text" onkeypress="doSomething()" />
-  <input type="text" onkeyup="doSomething()" />
+  <input type="text" onkeypress="doSomething()" placeholder="onkeypress" />
+  <input type="text" onkeyup="doSomething()" placeholder="onkeyup" />
 
   <!-- event pada select -->
-  <select onselect="doSomething()">
+  <select onchange="doSomething()">
+    <option value="">pilih opsi</option>
     <option value="1">pilihan 1</option>
     <option value="2">pilihan 2</option>
   </select>
