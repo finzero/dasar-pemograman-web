@@ -19,7 +19,14 @@ const AnchorNav = (props) => {
   function handleAnchorClick(target) {
     toggleSidebar();
     const el = document.getElementById(target);
-    el.scrollIntoView({ behavior: 'smooth' });
+    const headerOffset = 55;
+    const elementPosition = el.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
   }
 
   return (

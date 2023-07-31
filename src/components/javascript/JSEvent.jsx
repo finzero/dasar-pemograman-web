@@ -15,10 +15,6 @@ const JSEvent = () => {
           dengan menggunakan tombol kiri mouse.
         </div>
         <div>
-          <code className="text-red">dblclick:</code> Terjadi ketika elemen
-          diklik dua kali dengan cepat.
-        </div>
-        <div>
           <code className="text-red">mouseover:</code> Terjadi ketika kursor
           mouse memasuki area elemen.
         </div>
