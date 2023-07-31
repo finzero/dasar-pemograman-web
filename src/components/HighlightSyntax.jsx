@@ -2,9 +2,11 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDarkReasonable } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import buttons from '../assets/mac-buttons.png';
 import copyIcon from '../assets/copy.png';
+import toast from 'react-hot-toast';
 
 function copy(data) {
   navigator.clipboard.writeText(data);
+  toast.success('Copied');
 }
 
 const HighlightSyntax = ({ title, lang, children }) => (
