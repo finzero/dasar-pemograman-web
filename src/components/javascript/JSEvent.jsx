@@ -99,7 +99,7 @@ const JSEvent = () => {
   <title>Contoh Event pada JavaScript</title>
   <script>
     function doSomething() {
-      console.log('saya log fungsi);
+      console.log('saya log fungsi');
     }
   </script>
 </head>
