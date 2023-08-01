@@ -357,6 +357,7 @@ img {
   position: fixed;
   flex-direction: column;
   width: 250px;
+  cursor: pointer;
 }
 
 .anchor-items.show {

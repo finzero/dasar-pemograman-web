@@ -1,32 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import '../../assets/css/navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, matchRoutes, useLocation } from 'react-router-dom';
 
 const data = [
   {
     label: 'HTML',
-    link: 'html',
+    link: '/html',
     active: false,
   },
   {
     label: 'CSS',
-    link: 'css',
+    link: '/css',
     active: false,
   },
   {
     label: 'Javascript',
-    link: 'javascript',
+    link: '/javascript',
     active: false,
   },
   {
     label: 'Cheatsheet',
-    link: 'cheatsheet',
+    link: '/cheatsheet',
     active: false,
   },
 ];
 
 const TopNavBar = () => {
   const [menu, setMenu] = useState(data);
+  const location = useLocation();
+  const { pathname } = location;
 
   function setActive(selected) {
     setMenu(
@@ -40,7 +42,12 @@ const TopNavBar = () => {
   }
 
   useEffect(() => {
-    setActive(menu[0]);
+    if (pathname === '/') {
+      setActive(menu[0]);
+    } else {
+      const menuIdx = menu.findIndex((m) => m.link === pathname);
+      setActive(menu[menuIdx]);
+    }
   }, []);
 
   return (

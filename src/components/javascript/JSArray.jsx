@@ -29,12 +29,12 @@ arrOfObject.filter(data => data.jenisKelamin === 'P')`}
 arrOfObject.find(data => data.nama === 'Dinda');
 
 // Mencari 1 siswa dengan jenis kelamin Laki-Laki
-arrOfObject.find(data => data.jenisKelamin === 'L');
+arrOfObject.find(data => data.jenisKelamin === 'L'); // ❌ find hanya akan mengembalikan paling banyak 1 data
 `}
         </HighlightSyntax>
         <HighlightSyntax title={'Find Index'} lang={'javascript'}>
           {`// Mencari index dari data yg tipe-nya number
-arrRandom.filter(data => typeof data == 'number');`}
+arrRandom.findIndex(data => typeof data == 'number');`}
         </HighlightSyntax>
         <HighlightSyntax title={'Every'} lang={'javascript'}>
           {`// mengecek apakah semua data di dalam array sesuai dengan kondisi yang ditentukan
