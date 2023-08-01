@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 
 function copy(data) {
   navigator.clipboard.writeText(data);
-  toast.success('Copied');
+  toast.success('Copied to clipboard');
 }
 
 const HighlightSyntax = ({ title, lang, children }) => (
