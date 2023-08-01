@@ -6,7 +6,7 @@ import Section from '../Section';
 const CSSLoad = () => {
   return (
     <Section id="css-load" title="Cara Load CSS">
-      <div style={{ display: 'flex' }}>
+      <div className="flex card-content bg-white">
         <div>
           <img width={'400px'} src={typeOfCSS} alt="" />
         </div>

@@ -5,7 +5,7 @@ import Section from '../Section';
 const HTMLCaraBuat = () => {
   return (
     <Section id="cara-buat-html" title="Cara membuat HTML">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <HighlightSyntax>
           {`<!DOCTYPE html>
 <html lang="en">

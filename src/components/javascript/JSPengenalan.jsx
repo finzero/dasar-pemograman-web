@@ -7,18 +7,16 @@ import HighlightSyntax from '../HighlightSyntax';
 const JSPengenalan = () => {
   return (
     <Section id="js-pengenalan" title="Pengenalan Javascript">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <b>JavaScript</b> adalah bahasa pemrograman yang digunakan dalam
         pengembangan website agar lebih dinamis dan interaktif, dengan
         javascript kita bisa memanipulasi DOM (Document Object Model)
-      </div>
-      <div className="card-content bg-white b-1 mt-1">
-        <div className="h4">Tools yang digunakan untuk belajar javascript</div>
+        <div className="h4">Tools yang digunakan untuk belajar javascript:</div>
         <ol>
           <li>Web Browser (Google Chrome, Firefox, Opera, dll)</li>
           <li>Teks Editor (VS Code, Sublime, Atom, Notepad++, dll)</li>
         </ol>
-        <div className="h4 mb-1">Console pada browser</div>
+        <div className="h4">Console pada browser</div>
         <p>
           pada browser kita bisa melakukan inspect element atau menekan F12,
           kemudian pindah ke tab <i>console</i>, seperti gambar di bawah

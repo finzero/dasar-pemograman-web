@@ -182,12 +182,13 @@ pre {
 
 .title {
   padding: 5px;
-  background: linear-gradient(195deg, rgb(53 163 231), rgb(0 41 139));
-  color: white;
+  /* background: linear-gradient(195deg, rgb(53 163 231), rgb(0 41 139)); */
+  /* color: white; */
   font-weight: bold;
   display: table;
   cursor: pointer;
   border-radius: 4px;
+  font-size: 20px;
 }
 
 .section {
@@ -195,7 +196,7 @@ pre {
   border: 1px solid #b3b3b3;
   border-radius: 8px;
   padding: 10px;
-  background: aliceblue;
+  background: #eaeaea;
 }
 
 .mb-1 {

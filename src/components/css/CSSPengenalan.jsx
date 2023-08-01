@@ -7,22 +7,23 @@ import cssAsSkin from '../../assets/css-as-skin.png';
 
 export const CSSPengenalan = () => (
   <Section id="css-pengenalan" title="Pengenalan CSS">
-    <p>
-      CSS (Cascade Style Sheet) adalah sebuah bahasa yang digunakan untuk
-      mengatur tampilan web. Dengan CSS, kita dapat mengatur layout (tata
-      letak), warna, font, garis, background, animasi, dan lain-lain.
-    </p>
-    <img style={{ maxWidth: 400 }} src={cssAsSkin} alt="" />
-    <p>
-      <b>HTML</b> bisa dibilang sebagai kerangka dari sebuah aplikasi web,
-      dimana <b>CSS</b> merupakan kulit yang melapisi kerangka tersebut.
-      kemudian ada juga <b>Javascript</b> yang merupakan logic dari aplikasi
-      web, <b>javascript</b> membuat aplikasi web menjadi dinamis.
-    </p>
-    <h3>Contoh CSS</h3>
-    <div className="flex flex-sm-col">
-      <HighlightSyntax>
-        {`<!DOCTYPE html>
+    <div className="card-content bg-white">
+      <p>
+        CSS (Cascade Style Sheet) adalah sebuah bahasa yang digunakan untuk
+        mengatur tampilan web. Dengan CSS, kita dapat mengatur layout (tata
+        letak), warna, font, garis, background, animasi, dan lain-lain.
+      </p>
+      <img style={{ maxWidth: 400 }} src={cssAsSkin} alt="" />
+      <p>
+        <b>HTML</b> bisa dibilang sebagai kerangka dari sebuah aplikasi web,
+        dimana <b>CSS</b> merupakan kulit yang melapisi kerangka tersebut.
+        kemudian ada juga <b>Javascript</b> yang merupakan logic dari aplikasi
+        web, <b>javascript</b> membuat aplikasi web menjadi dinamis.
+      </p>
+      <h3>Contoh CSS</h3>
+      <div className="flex flex-sm-col">
+        <HighlightSyntax>
+          {`<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -159,49 +160,50 @@ export const CSSPengenalan = () => (
 </body>
 
 </html>`}
-      </HighlightSyntax>
-      <div id="wrapper">
-        <div id="header">
-          <div className="p-1 d-flex justify-content-between align-items-center">
-            <img src={igText} height="30" alt="" />
-            <div className="flex gap-1">
-              <span></span>
-              <span></span>
+        </HighlightSyntax>
+        <div id="wrapper">
+          <div id="header">
+            <div className="p-1 d-flex justify-content-between align-items-center">
+              <img src={igText} height="30" alt="" />
+              <div className="flex gap-1">
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="post">
-          <div className="post-title p-1">
-            <img className="title-logo" src={donutLogo} alt="" />
-            Official_Donat_Bahagia
-          </div>
-          <div className="post-img">
-            <img className="w-100" src={doba} alt="" />
-          </div>
-          <div className="post-buttons">
-            <div>
-              <span></span>
-              <span></span>
-              <span></span>
+          <div id="post">
+            <div className="post-title p-1">
+              <img className="title-logo" src={donutLogo} alt="" />
+              Official_Donat_Bahagia
             </div>
-            <div className="text-center">...</div>
-            <div className="text-right">
-              <span></span>
+            <div className="post-img">
+              <img className="w-100" src={doba} alt="" />
+            </div>
+            <div className="post-buttons">
+              <div>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div className="text-center">...</div>
+              <div className="text-right">
+                <span></span>
+              </div>
+            </div>
+            <div className="post-comment">
+              <div>9,999 likes</div>
+              <div>
+                <b>Official_donatbahagia</b> Lorem Ipsum dolor sit amet
+              </div>
             </div>
           </div>
-          <div className="post-comment">
-            <div>9,999 likes</div>
-            <div>
-              <b>Official_donatbahagia</b> Lorem Ipsum dolor sit amet
-            </div>
+          <div id="footer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span className="rounded-full">--</span>
           </div>
-        </div>
-        <div id="footer">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span className="rounded-full">--</span>
         </div>
       </div>
     </div>

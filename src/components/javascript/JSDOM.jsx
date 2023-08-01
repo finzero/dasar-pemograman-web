@@ -6,7 +6,7 @@ import HighlightSyntax from '../HighlightSyntax';
 const JSDOM = () => {
   return (
     <Section id="js-dom" title="Document Object Model">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <div className="h3">Pengertian DOM</div>
         <p>
           DOM adalah interface pemrograman untuk dokumen HTML. DOM memungkinkan

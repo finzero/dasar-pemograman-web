@@ -5,12 +5,9 @@ import HighlightSyntax from '../HighlightSyntax';
 const HTMLStyling = () => {
   return (
     <Section id="styling-html" title="Styling pada HTML">
-      <div className="card-content bg-white b-1 mt-1">
-        <p>
-          Kita bisa memberikan style pada element html, caranya adalah dengan
-          menggunakan atribut <code>style</code>.
-        </p>
-        <h3>Contoh 1:</h3>
+      <div className="card-content bg-white b-1">
+        Kita bisa memberikan style pada element html, caranya adalah dengan
+        menggunakan atribut <code>style</code>.<h3>Contoh 1:</h3>
         <div>
           <HighlightSyntax>
             {`<p style="background: black; color: white">

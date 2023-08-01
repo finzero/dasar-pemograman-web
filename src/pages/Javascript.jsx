@@ -35,7 +35,7 @@ const Javascript = () => {
         <JSOperator />
         <JSArray />
         <JSFunction />
-        <JSEvent />
+        {/* <JSEvent /> */}
       </div>
     </div>
   );

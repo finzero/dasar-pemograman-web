@@ -5,7 +5,7 @@ import igDobah from '../../assets/layout-post-ig.png';
 const HTMLDiv = () => {
   return (
     <Section id="div" title="Mengenal &lt;div&gt;">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <p>
           <b>div</b> merupakan singkatan dari <i>division</i> atau
           pengelompokan, di dalam element div kita bisa membungkus beberapa

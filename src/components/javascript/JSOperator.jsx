@@ -5,7 +5,7 @@ import HighlightSyntax from '../HighlightSyntax';
 const JSOperator = () => {
   return (
     <Section id="js-operator" title="Operator Pada Javascript">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <div className="h4">Operator Aritmatika</div>
         <HighlightSyntax
           lang={'javascript'}

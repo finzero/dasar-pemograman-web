@@ -4,7 +4,7 @@ import Section from '../Section';
 const HTMLTag = () => {
   return (
     <Section id="tag-html" title="HTML Tag">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <div className="mb-1">
           Berikut merupakan tag HTML yang umum digunakan:
         </div>
