@@ -1,0 +1,18 @@
+.flex-container {
+  width: 400px;
+  height: 400px;
+  background: yellow;
+  display: flex;
+  /* set element di dalam container ke tengah secara horizontal */
+  justify-content: center;
+  /* set element di dalam container ke tengah secara vertical */
+  align-items: center;
+  position: relative;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: relative;
+}

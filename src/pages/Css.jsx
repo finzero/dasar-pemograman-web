@@ -8,6 +8,7 @@ import CSSMediaQuery from '../components/css/CSSMediaQuery';
 import CSSUnit from '../components/css/CSSUnit';
 import useAnchors from '../hooks/useAnchors';
 import AnchorNav from '../components/AnchorNav';
+import CSSFlex from '../components/css/CSSFlex';
 
 const Css = () => {
   const [anchors, setSections] = useAnchors();
@@ -27,6 +28,7 @@ const Css = () => {
         <CSSAnimation />
         <CSSMediaQuery />
         <CSSUnit />
+        <CSSFlex />
       </div>
     </div>
   );
