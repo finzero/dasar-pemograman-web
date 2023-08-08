@@ -10,6 +10,8 @@ import JSOperator from '../components/javascript/JSOperator';
 import JSArray from '../components/javascript/JSArray';
 import JSFunction from '../components/javascript/JSFunction';
 import JSEvent from '../components/javascript/JSEvent';
+import JSCondition from '../components/javascript/JSCondition';
+import JSLoop from '../components/javascript/JSLoop';
 
 const Javascript = () => {
   const [anchors, setSections] = useAnchors();
@@ -35,7 +37,9 @@ const Javascript = () => {
         <JSOperator />
         <JSArray />
         <JSFunction />
-        {/* <JSEvent /> */}
+        <JSEvent />
+        <JSCondition />
+        <JSLoop />
       </div>
     </div>
   );

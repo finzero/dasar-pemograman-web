@@ -5,7 +5,7 @@ import HighlightSyntax from '../HighlightSyntax';
 const JSArray = () => {
   return (
     <Section id="js-array" title="Fungsi Untuk Array">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <p>Fungsi-fungsi yang biasa digunakan untuk array:</p>
         <HighlightSyntax lang={'javascript'}>
           {`var arrRandom = [1, 'text', true, {key: 'value'}];
@@ -16,6 +16,22 @@ var arrOfObject = [
   { nama: 'Cika', jenisKelamin: 'P' },
   { nama: 'Dinda', jenisKelamin: 'P' },
 ];`}
+        </HighlightSyntax>
+        <HighlightSyntax title={'Push'} lang={'javascript'}>
+          {`// menambahkan item pada ujung array
+arrRandom.push('saya item array baru'); 
+// [1, 'text', true, {key: 'value'}, 'saya item array baru']
+
+// Filter data siswa yang memiliki jenis kelamin perempuan
+arrOfObject.filter(data => data.jenisKelamin === 'P')`}
+        </HighlightSyntax>
+        <HighlightSyntax title={'Join'} lang={'javascript'}>
+          {`// menggabungkan semua item array menjadi string
+['nama','saya', 'budi'].join(' '); 
+// nama saya budi
+
+// Filter data siswa yang memiliki jenis kelamin perempuan
+arrOfObject.filter(data => data.jenisKelamin === 'P')`}
         </HighlightSyntax>
         <HighlightSyntax title={'Filter'} lang={'javascript'}>
           {`// Filter item dari array yang tipe-nya number
@@ -29,7 +45,7 @@ arrOfObject.filter(data => data.jenisKelamin === 'P')`}
 arrOfObject.find(data => data.nama === 'Dinda');
 
 // Mencari 1 siswa dengan jenis kelamin Laki-Laki
-arrOfObject.find(data => data.jenisKelamin === 'L'); // ❌ find hanya akan mengembalikan paling banyak 1 data
+arrOfObject.find(data => data.jenisKelamin === 'L'); // ❌ find hanya akan mengembalikan 0 atau 1 data
 `}
         </HighlightSyntax>
         <HighlightSyntax title={'Find Index'} lang={'javascript'}>

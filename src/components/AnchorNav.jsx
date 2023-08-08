@@ -25,7 +25,7 @@ const AnchorNav = (props) => {
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: 'smooth',
+      behavior: 'instant',
     });
   }
 

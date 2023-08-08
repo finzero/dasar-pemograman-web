@@ -5,7 +5,7 @@ import HighlightSyntax from '../HighlightSyntax';
 const JSVariable = () => {
   return (
     <Section id="js-variable" title="Variabel">
-      <div className="card-content bg-white b-1 mt-1">
+      <div className="card-content bg-white b-1">
         <div className="h3">Pengertian Variabel</div>
         <p>
           <b>Variabel</b> adalah penanda identitas/nama yang digunakan untuk
