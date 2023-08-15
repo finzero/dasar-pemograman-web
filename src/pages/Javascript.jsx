@@ -12,6 +12,9 @@ import JSFunction from '../components/javascript/JSFunction';
 import JSEvent from '../components/javascript/JSEvent';
 import JSCondition from '../components/javascript/JSCondition';
 import JSLoop from '../components/javascript/JSLoop';
+import JSTryCatch from '../components/javascript/JSTryCatch';
+import JSASync from '../components/javascript/JSASync';
+import JSFetch from '../components/javascript/JSFetch';
 
 const Javascript = () => {
   const [anchors, setSections] = useAnchors();
@@ -40,6 +43,9 @@ const Javascript = () => {
         <JSEvent />
         <JSCondition />
         <JSLoop />
+        <JSTryCatch />
+        <JSASync />
+        {/* <JSFetch /> */}
       </div>
     </div>
   );
