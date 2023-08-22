@@ -1,0 +1,26 @@
+{
+  "status": "200",
+  "message": "success",
+  "data": [
+    {
+      "nama": "Adit",
+      "jenis_kelamin": "L"
+    },
+    {
+      "nama": "Budi",
+      "jenis_kelamin": "L"
+    },
+    {
+      "nama": "Ani",
+      "jenis_kelamin": "P"
+    },
+    {
+      "nama": "Tini",
+      "jenis_kelamin": "P"
+    },
+    {
+      "nama": "Siti",
+      "jenis_kelamin": "P"
+    }
+  ]
+}

@@ -80,6 +80,20 @@ const Cheatsheet = () => {
           </a>
         </div>
       </section>
+      <section className="section">
+        <div className="title">Javascript</div>
+        <div className="flex py-1 gap-1">
+          <a href="http://es6-features.org/" target="blank">
+            <div className="card cheatsheet">Fitur ES6</div>
+          </a>
+          <a href="https://github.com/DrkSephy/es6-cheatsheet" target="blank">
+            <div className="card cheatsheet">[DrkSephy] Fitur ES6</div>
+          </a>
+          <a href="https://axios-http.com/docs/intro" target="blank">
+            <div className="card cheatsheet">Axios</div>
+          </a>
+        </div>
+      </section>
     </div>
   );
 };

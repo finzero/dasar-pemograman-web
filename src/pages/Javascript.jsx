@@ -15,6 +15,7 @@ import JSLoop from '../components/javascript/JSLoop';
 import JSTryCatch from '../components/javascript/JSTryCatch';
 import JSASync from '../components/javascript/JSASync';
 import JSFetch from '../components/javascript/JSFetch';
+import JSES6Function from '../components/javascript/JSES6Function';
 
 const Javascript = () => {
   const [anchors, setSections] = useAnchors();
@@ -45,7 +46,8 @@ const Javascript = () => {
         <JSLoop />
         <JSTryCatch />
         <JSASync />
-        {/* <JSFetch /> */}
+        <JSFetch />
+        <JSES6Function />
       </div>
     </div>
   );
