@@ -8,7 +8,7 @@ const display_es5 = `'nilai matematika ' + siswa.nama + ' adalah ' + nilai.matem
 
 const JSES6Function = () => {
   return (
-    <Section id="js-es6function" title="Fungsi ES6">
+    <Section id="js-es6function" title="Fitur ES6">
       <div className="card-content bg-white b-1">
         <div className="h4">Template Literal</div>
         <HighlightSyntax lang={'javascript'}>
