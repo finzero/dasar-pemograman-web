@@ -1,4 +1,3 @@
-import React from 'react';
 import amongUs from '../assets/among_us_run.gif';
 
 const style = {

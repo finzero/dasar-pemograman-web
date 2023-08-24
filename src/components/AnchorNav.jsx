@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import arrow from '../assets/menu-icon.png';
+import PropTypes from 'prop-types';
 
 const AnchorNav = (props) => {
   const sidebarAnchor = useRef();
@@ -49,6 +50,10 @@ const AnchorNav = (props) => {
       </div>
     </div>
   );
+};
+
+AnchorNav.propTypes = {
+  anchors: PropTypes.array,
 };
 
 export default AnchorNav;

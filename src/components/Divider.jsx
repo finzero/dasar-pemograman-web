@@ -1,5 +1,3 @@
-import React from 'react'
+const Divider = () => <div className="divider"></div>;
 
-const Divider = () => <div className='divider'></div>
-
-export default Divider
+export default Divider;

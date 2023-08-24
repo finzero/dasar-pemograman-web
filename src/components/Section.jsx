@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const Section = (props) => {
   return (
@@ -9,6 +9,12 @@ const Section = (props) => {
       <div>{props.children}</div>
     </section>
   );
+};
+
+Section.propTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string,
+  children: PropTypes.children,
 };
 
 export default Section;

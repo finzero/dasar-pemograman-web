@@ -3,6 +3,7 @@ import { atomOneDarkReasonable } from 'react-syntax-highlighter/dist/esm/styles/
 import buttons from '../assets/mac-buttons.png';
 import copyIcon from '../assets/copy.png';
 import toast from 'react-hot-toast';
+import PropTypes from 'prop-types';
 
 function copy(data) {
   navigator.clipboard.writeText(data);
@@ -33,5 +34,11 @@ const HighlightSyntax = ({ title, lang, children }) => (
     </SyntaxHighlighter>
   </div>
 );
+
+HighlightSyntax.propTypes = {
+  title: PropTypes.string,
+  lang: PropTypes.string,
+  children: PropTypes.children,
+};
 
 export default HighlightSyntax;
