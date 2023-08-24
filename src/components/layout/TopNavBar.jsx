@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import '../../assets/css/navbar.css';
-import { Link, matchRoutes, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const data = [
   {
@@ -16,6 +16,11 @@ const data = [
   {
     label: 'Javascript',
     link: '/javascript',
+    active: false,
+  },
+  {
+    label: 'Reactjs',
+    link: '/reactjs',
     active: false,
   },
   {
@@ -52,7 +57,7 @@ const TopNavBar = () => {
 
   return (
     <div className="top-navbar">
-      {menu.map((item, idx) => (
+      {menu.map((item) => (
         <Link
           to={item.link}
           className={`top-navbar-item ${item.active ? 'active' : ''}`}

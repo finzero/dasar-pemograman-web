@@ -1,18 +1,7 @@
-import React, { useEffect } from 'react';
 import Section from '../Section';
 import HighlightSyntax from '../HighlightSyntax';
 
 const JSFetch = () => {
-  useEffect(() => {
-    fetch('https://dummyjson.com/products/1')
-      .then((res) => res.json())
-      .then((json) => console.log(json));
-
-    fetch('json/siswa.json')
-      .then((res) => res.json())
-      .then((json) => console.log(json));
-  }, []);
-
   return (
     <Section id="js-fetch" title="Fetch Data">
       <div className="card-content bg-white b-1">

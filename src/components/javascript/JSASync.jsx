@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from '../Section';
 import HighlightSyntax from '../HighlightSyntax';
 import syncAsyncImage from '../../assets/async-sync-diagram.png';

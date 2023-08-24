@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Cheatsheet = () => {
   return (
     <div className="card-main no-sidebar">
